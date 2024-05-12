@@ -10,3 +10,5 @@ sentencepiece
 unittest
 streamlit
 numpy
+flask
+request
