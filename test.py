@@ -15,7 +15,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocessinput, decodepredictions
 import streamlit as st
 
-import app from main.py
+import app main.py
 
 class TestStreamlitApp(unittest.TestCase):
 
