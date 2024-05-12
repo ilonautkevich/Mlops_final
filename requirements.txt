@@ -7,7 +7,7 @@ pytest
 streamlit
 httpx
 sentencepiece
-unittest
+
 streamlit
 numpy
 flask
