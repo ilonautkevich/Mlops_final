@@ -48,7 +48,7 @@ class TestStreamlitApp(unittest.TestCase):
         # Здесь мы проверяем вывод, но это может быть сложно без GUI
         # Вместо этого можно проверить, что функция вызывается без ошибок
 
-if __name == '__main':
+if __name__ == '__main__':
     unittest.main()
 
 
