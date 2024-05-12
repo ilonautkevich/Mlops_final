@@ -1,13 +1,13 @@
-#import unittest
-#import io
-#import numpy as np
-#from PIL import Image
-#from tensorflow.keras.applications import EfficientNetB0
-#from tensorflow.keras.preprocessing import image
-#from tensorflow.keras.applications.efficientnet import preprocessinput, decodepredictions
-#import streamlit as st
+import unittest
+import io
+import numpy as np
+from PIL import Image
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.efficientnet import preprocessinput, decodepredictions
+import streamlit as st
 
-#from main.py import app
+from main.py import app
 
 from streamlit.testing.v1 import AppTest
 
