@@ -30,8 +30,8 @@
 
     #def test_preprocess_image(self):
         # Создаем тестовое изображение
-        test_img = Image.new('RGB', (224, 224), color = (73, 109, 137))
-        preprocessed_img = app.preprocess_image(test_img)
+        #test_img = Image.new('RGB', (224, 224), color = (73, 109, 137))
+        #preprocessed_img = app.preprocess_image(test_img)
         # Проверяем, что изображение было правильно преобразовано
         #self.assertEqual(preprocessed_img.shape, (1, 224, 224, 3))
 
