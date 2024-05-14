@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
 
 # Загрузка модели
-@#st.cache_data
+# st.cache_data
 def load_model():
     return EfficientNetB0(weights='imagenet')
 
