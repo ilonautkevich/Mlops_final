@@ -16,12 +16,13 @@ class TestImageClassificationApp(unittest.TestCase):
         preprocessed_img = preprocess_image(img)
         self.assertIsInstance(preprocessed_img, np.ndarray, "Изображение не было правильно предварительно обработано")
 
-    def test_print_predictions(self): # Создаем тестовые предсказания с формой
+    # Создаем тестовые предсказания с формой
+    def test_print_predictions(self):
         preds = np.random.rand(1, 1000)
         print_predictions(preds)
         # Здесь мы предполагаем, что
         # функция print_predictions выводит результаты в stdout,
-        # поэтому мы не можем напрямую проверить вывод. 
+        # поэтому мы не можем напрямую проверить вывод.
         # Вместо этого мы можем проверить, что функция не вызывает исключений.
         pass
 
