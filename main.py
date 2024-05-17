@@ -55,4 +55,4 @@ if result:
     st.write('Результаты распознавания:')
     print_predictions(preds)
 
-#Коммит 1
+# Коммит 1
