@@ -7,10 +7,12 @@ from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
 
+
 # Загрузка модели
 # st.cache_data
 def load_model():
     return EfficientNetB0(weights='imagenet')
+
 
 # Функция для обработка изображения
 def preprocess_image(img):
@@ -19,6 +21,7 @@ def preprocess_image(img):
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
     return x
+
 
 # Функция для загрузки изображения
 def load_image():
@@ -30,14 +33,17 @@ def load_image():
     else:
         return None
 
+
 # Функция для предсказания типа изображения
 def print_predictions(preds):
     classes = decode_predictions(preds, top=3)[0]
     for cl in classes:
         st.write(cl[1], cl[2])
 
+
 # Создаем образец модели
 model = load_model()
+
 
 # Намечаем с помощью стримлит основные элементы страницы
 st.title('улучшенная классификации изображений в Streamlit')
